@@ -1,7 +1,13 @@
 class ToppagesController < ApplicationController
   def index
     require 'youtube.rb'
-    find_videos("HIKAKIN")
+    if params[:keyword] && params[:number]
+      find_videos(params[:keyword], params[:number])
+      @keyword = params[:keyword]
+    else # デフォルト
+      find_videos('HIKAKIN', 10)
+      @keyword = 'HIKAKIN'
+    end
   end
 
   def about
