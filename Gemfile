@@ -27,6 +27,11 @@ gem 'google-api-client'
 gem 'trollop', '~> 2.1'
 # .envから環境変数を読み込み
 gem 'dotenv-rails'
+gem 'devise'
+gem 'bootstrap-sass'
+gem 'jquery-rails'
+# deivse for bootstrap
+gem 'bootstrap_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
