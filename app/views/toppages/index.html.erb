@@ -3,7 +3,7 @@
 <div class="search_form">
   <%= render 'search_form' %>
 </div>
-<p><%= @keyword %>の検索結果</p><small>表示件数:<%= @number %>件</small>
+<p><%= @keyword %>の検索結果</p><small>表示件数:<%= @number %>件 検索回数: <%= @word.count %></small>
 <div class="search_results">
   <%= render 'search_results' %>
 </div>

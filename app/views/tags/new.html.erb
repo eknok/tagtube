@@ -1,2 +1,9 @@
 <h1>Tags#new</h1>
 <p>Find me in app/views/tags/new.html.erb</p>
+<h1>新規作成</h1>
+<%= form_for @word, url: tags_path do |f| %>
+  <%= render 'layouts/error_messages', object: f.object %>
+  <%= f.label :word %></br>
+  <%= f.text_field :word, class: 'form-control', placeholder: "半角スペースで複数検索可能" %>
+  <%= f.submit "送信", class: 'btn btn-primary' %>
+<% end %>
