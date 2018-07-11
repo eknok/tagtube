@@ -8,6 +8,7 @@ class ToppagesController < ApplicationController
     else # デフォルト
       find_videos('HIKAKIN', 10)
       @keyword = 'HIKAKIN'
+      @number = 10
     end
   end
 
