@@ -3,13 +3,11 @@
     <%= text_field_tag :keyword, params[:search], class: 'form-control', placeholder: "半角スペースで複数検索可能" %>
   </div>
   <div class="form-group">
-    <select name="number" class="form-control">
-      <option value="">選択してください</option>
-      <option value=10>10</option>
-      <option value=30>30</option>
-      <option value=50>50</option>
-      <option value=70>70</option>
-    </select>
+    表示件数：
+    <%= radio_button_tag :number, 10 %> 10 </label>
+    <%= radio_button_tag :number, 30 %> 30 </label>
+    <%= radio_button_tag :number, 50 %> 50 </label>
+    <label class="checkbox-inline">
   </div>
   <%= submit_tag '検索', class: 'btn btn-success' %>
 <% end %><br>

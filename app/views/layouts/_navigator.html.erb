@@ -1,0 +1,15 @@
+<!-- layouts/_navigation_html.erb -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+      <!-- 常に表示する要素 -->
+      <div class="col-sm-7">
+        <%= render 'layouts/navigator/header' %>
+      </div><!-- col-sm-7 -->
+      <!-- 小画面デバイスで隠す要素 -->
+      <div class="col-sm-5">
+        <%= render 'layouts/navigator/tag_elements' %>
+      </div><!-- col-sm-5 -->
+    </div><!-- row -->
+  </div><!-- container -->
+</nav>
