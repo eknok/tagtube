@@ -1,7 +1,6 @@
 class ToppagesController < ApplicationController
   include TagsHelper # tag_count(word)
   def index
-    require 'youtube.rb'
     if params[:keyword] && params[:number]
       @keyword = params[:keyword]
       @number = params[:number]
